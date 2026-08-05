@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author: Dhananjay Bhagat
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}      %--PDF LATEX----
+
+%----------FONT----------
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+% \usepackage{fontspec}
+% \setmainfont{Lato}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\pdfgentounicode=1      %--PDF LATEX---
+
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[3]{
+    \item\vspace{-2pt}
+    \begin{tabular*}{\textwidth}{@{}p{0.42\textwidth}@{\extracolsep{\fill}}p{0.56\textwidth}@{}}
+        \textbf{#1}\hspace{4pt}\raisebox{0.12ex}{\footnotesize #2}
+        &
+        \raggedleft\footnotesize\emph{#3}
+    \end{tabular*}
+    \vspace{-19pt}
+}
+\newcommand{\resumeProjectSubheading}[3]{
+    \vspace{0pt}
+    \begin{tabular*}{\textwidth}{@{}p{0.42\textwidth}@{\extracolsep{\fill}}p{0.56\textwidth}@{}}
+        \hspace{0.07in}\textbullet\ \textbf{#1}\hspace{4pt}\raisebox{0.12ex}{\footnotesize #2}
+        &
+        \raggedleft\footnotesize\emph{#3}
+    \end{tabular*}
+    \vspace{-18pt}
+}
+\newcommand{\resumeProjectItemListStart}{
+\begin{itemize}[
+leftmargin=0.30in,
+label=\textbullet,
+itemsep=2pt,
+topsep=4.75pt,
+parsep=0pt,
+partopsep=0pt
+]
+}
+\newcommand{\resumeItemListStart}
+{
+\begin{itemize}[
+leftmargin=0.2in,
+label=\textbullet,
+itemsep=2pt,
+topsep=0pt
+]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeAchievementListStart}{
+\begin{itemize}[
+leftmargin=0.2in,
+label=\textbullet,
+itemsep=-1pt,
+topsep=0pt
+]
+}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \scshape Dhananjay Bhagat} \\ \vspace{4pt}
+
+    \small
+    \href{tel:+919834902436}{\faPhone\ +91-9834902436}
+    \hspace{0.05cm}\textbar\hspace{0.05cm}
+    \href{mailto:dhananjaybhagat123@gmail.com}{\faEnvelope\ dhananjaybhagat123@gmail.com}
+    \hspace{0.05cm}\textbar\hspace{0.05cm}
+    \href{https://www.linkedin.com/in/dhananjaybhagat27/}{\faLinkedin\ in/dhananjaybhagat27}
+    \hspace{0.05cm}\textbar\hspace{0.05cm}
+    \href{https://github.com/Dhanno98}{\faGithub\ Dhanno98}
+    \hspace{0.05cm}\textbar\hspace{0.05cm}
+    \href{https://leetcode.com/u/Dhanno27/}{\faCode\ Dhanno27}
+\end{center}
+
+\vspace{-8pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Apache Fineract (Apache Software Foundation)}{Jan 2026 -- Present}
+{Open Source Backend Contributor}{Remote}
+\resumeItemListStart
+\resumeItem{
+Engineered a \textbf{currency-aware charge rounding feature} in \textbf{Java} that ensures consistent financial charge processing across \textbf{4 core banking modules (Loan, Savings, Share, and Client)} by integrating Fineract's \textbf{Money} abstraction, applying configured currency precision and denomination rules, and preventing zero-value charges.
+}
+\resumeItem{
+Designed and developed a \textbf{regression test suite} comprising \textbf{45 integration tests} across \textbf{4 financial modules (Loan, Savings, Share, and Client)} using generated \textbf{Fineract API Clients}, \textbf{REST Assured}, and \textbf{JUnit} to validate charge rounding, REST API behavior, and critical business workflows.
+}
+\resumeItem{
+Identified, reported, and resolved \textbf{backend defects} by correcting \textbf{Search API} entity mappings, replacing runtime \textbf{HTTP~500} errors with proper \textbf{HTTP 400} validation responses, and aligning \textbf{OpenAPI} documentation with backend validation, thereby improving \textbf{API correctness} and \textbf{developer experience}.
+}
+\resumeItem{
+Collaborated with \textbf{Apache Fineract maintainers} through technical discussions and iterative code reviews, resulting in \textbf{5~merged pull requests} across backend features, automated testing, API enhancements, and developer documentation.
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+{\bfseries\normalsize Ecommerce Platform}
+\vspace{1.5pt}
+\resumeProjectSubheading
+{Backend API}
+{\href{https://github.com/Dhanno98/Ecommerce-Backend}{[Link]}}
+{Java\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Spring Boot\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Spring Security\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,PostgreSQL\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Stripe\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,JUnit\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Mockito}
+% \vspace{0.5pt}
+\resumeProjectItemListStart
+\resumeItem{
+Built a \textbf{layered REST API backend} for the Ecommerce Platform using \textbf{Java}, \textbf{Spring Boot}, \textbf{Spring Data JPA}, and \textbf{PostgreSQL} to support authentication, product catalog, cart, order, and payment workflows.
+}
+\resumeItem{
+Secured \textbf{REST APIs} with stateless \textbf{JWT authentication} and \textbf{role-based authorization} using \textbf{Spring Security}.
+}
+\resumeItem{
+Designed \textbf{transactional order processing} for cart and payment validation, inventory updates, and order persistence.
+}
+\resumeItem{
+Integrated \textbf{Stripe Payment Intents} to securely process payments and validate transactions before order creation.
+}
+\resumeItem{
+Developed \textbf{350+ automated unit and integration tests} using \textbf{JUnit 5}, \textbf{Mockito}, and \textbf{MockMvc} to improve maintainability and prevent regressions.
+}
+\resumeItemListEnd
+\vspace{1pt}
+
+\resumeProjectSubheading
+{Frontend Client}
+{\href{https://github.com/Dhanno98/Ecommerce-Frontend}{[Link]}}
+{React\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Redux Toolkit\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,React Router\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Axios\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Tailwind CSS\,\hspace{0.05cm}\textbar\hspace{0.05cm}\,Material UI}
+% \vspace{0.5pt}
+\resumeProjectItemListStart
+\resumeItem{
+Built a frontend client for the Ecommerce Platform using \textbf{React}, \textbf{React Router}, and \textbf{Axios} to consume \textbf{Spring Boot REST APIs} and deliver an end-to-end shopping experience.
+}
+\resumeItem{
+Integrated with the backend's \textbf{JWT-based authentication} using \textbf{React Router} and \textbf{localStorage} to provide session persistence, protected routes, and role-based UI access.
+}
+\resumeItem{
+Centralized shared application state with \textbf{Redux Toolkit} for authentication, products, cart, checkout, and orders.
+}
+\resumeItemListEnd
+\vspace{-2pt}
+
+%-----------SKILLS-----------
+\section{Skills}
+\small
+\textbf{Languages:} Java, SQL, JavaScript, C \\[1pt]
+\textbf{Frameworks \& Libraries:} Spring Boot, React \\[1pt]
+\textbf{Databases:} PostgreSQL, MySQL \\[1pt]
+\textbf{Testing:} JUnit 5, Mockito, MockMvc, REST Assured \\[1pt]
+\textbf{Developer Tools:} Git, GitHub, Maven, Gradle, Docker, Postman, Jira \\[1pt]
+\textbf{Core Concepts:} Object-Oriented Programming, Data Structures \& Algorithms, REST APIs, Authentication \& Authorization \\[1pt]
+\textbf{Operating Systems:} Linux (Ubuntu), Windows 
+\normalsize
+
+%-----------EDUCATION-----------
+\section{Education}
+\small
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+\textbf{Shri Guru Gobind Singhji Institute of Engineering and Technology} &
+\textbf{Nanded, India} \\[1pt]
+B.Tech. in Electronics and Telecommunication Engineering \textbar\ CGPA: 8.60 &
+Jul 2017 -- Jun 2021 \\
+\end{tabular*}
+\normalsize
+
+
+%-----------COURSEWORK AND CERTIFICATIONS-----------
+\section{Coursework and Certifications}
+\small
+\textbf{Spring Academy} -- Spring Framework \& Spring Boot \\[1pt]
+\textbf{Princeton Algorithms, Parts I \& II} -- Coursera \\[1pt]
+\textbf{Harvard CS50x} -- Introduction to Computer Science
+\normalsize
+
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+
+\resumeAchievementListStart
+\resumeItem{Contributed \textbf{5 merged pull requests} to the \textbf{Apache Fineract} open-source project.}
+\resumeItem{Solved \textbf{150+ LeetCode} coding problems across data structures and algorithms.}
+\resumeItem{Earned the \textbf{LeetCode 50 Days Badge}.}
+\resumeItemListEnd
+
+\end{document}
