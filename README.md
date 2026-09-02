@@ -2,7 +2,7 @@
 
 # Dhananjay Bhagat
 
-### Java Backend Developer | Spring Boot | REST APIs | PostgreSQL | Apache Fineract Contributor
+### Java Backend Developer | Apache Fineract Contributor | Spring Boot | REST APIs | PostgreSQL |
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhananjaybhagat27/)
 [![GitHub](https://img.shields.io/badge/GitHub-Dhanno98-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Dhanno98)
